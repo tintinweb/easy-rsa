@@ -3,7 +3,7 @@ EasyRSA 3rd-party package for Synology
 
 
 
-Note - this is just a proof of concept. password your generated keyfiles in order to protect them
+Note - this is just a proof of concept.
 
 + removed --interactive from easy-rsa build scripts (easier for scripting)
 
