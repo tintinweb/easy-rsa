@@ -1,7 +1,8 @@
 #!/usr/syno/synoman/webman/3rdparty/EASYRSA/php-cli
 <?php
 DEFINE("PWD",realpath(dirname(__FILE__)));						//path to this script#
-DEFINE("EASY_RSA",PWD."/openvpn_easy-rsa/easy-rsa/2.0");		//path to easy-rsa scripts
+DEFINE("EASY_RSA_RELATIVE","openvpn_easy-rsa/easy-rsa/2.0");
+DEFINE("EASY_RSA",PWD."/".EASY_RSA_RELATIVE);		//path to easy-rsa scripts
 
 
 ################## START #######################
@@ -40,9 +41,35 @@ switch($QUERY['action']){
         	print "OK!";
     		break;
     default:
-            #print "default";
+            #print show_files(EASY_RSA_RELATIVE."/keys");
+            break;
 
 }
+
+function show_files($path){
+	$res = "";
+	$rel_path = $path;
+	$path = PWD."/".$path;
+	
+
+    $dir_handle = @opendir($path) or die("Unable to open $path");
+    // Loop through the files
+    while ($file = readdir($dir_handle)) {
+
+    if($file == "." || $file == ".." )
+        continue;
+        
+        $res .= "<a href=\"$rel_path/$file\">$file</a><br />";
+  
+    }
+
+    // Close
+    closedir($dir_handle);
+ 
+    return $res;
+}
+
+
 
 function easy_rsa_exec($cmd){
 
@@ -229,5 +256,6 @@ Ext.onReady(function() {
 </script>
 <DIV id="content"></DIV>
 
+<DIV id="files"><?php print show_files(EASY_RSA_RELATIVE."/keys") ?></DIV>
 </body>
-</html>
+</html> 
