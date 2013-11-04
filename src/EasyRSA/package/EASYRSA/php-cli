@@ -1,0 +1,2 @@
+#!/bin/ash
+php -d open_basedir=Off -d safe_mode_exec_dir=Off $*
