@@ -27,3 +27,12 @@ TODO
 ====
 
 * create simple GUI for a single root-ca based on build-ca,build-dh, build-key-server, build-key
+* imporove GUI
+* basedir restriction / cmd restriction for php-cli
+
+
+
+Notes
+=====
+
+* certificate icon taken from: http://www.softicons.com/free-icons/toolbar-icons/diagram-icons-by-double-j-design/certificate-icon  // License:CC as of 04.Nov.2013
