@@ -11,8 +11,8 @@ case $1 in
 		exit 0
 	;;
 	log)
-		echo "S2SVPN installed properly. To access it, click icon under 'admin' menu">/tmp/S2SVPN.log
-		echo "/tmp/S2SVPN.log";
+		echo "EasyRSA installed properly. To access it, click icon under 'admin' menu">/tmp/EasyRSA.log
+		echo "/tmp/EasyRSA.log";
 		exit 0
 	;;
 esac

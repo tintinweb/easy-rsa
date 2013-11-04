@@ -1,5 +1,5 @@
 package="EasyRSA"
-version="3b471495bb6e84c6e9ccd950301975a5006e63fa"
+version="1.0"
 maintainer="TinTin"
 description="EasyRSA package"
 arch="noarch"
