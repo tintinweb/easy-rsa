@@ -11,16 +11,16 @@ Note - this is just a proof of concept. password your generated keyfiles in orde
 Installation
 ============
 
-1) upload and install EasyRSA.spk in package manager
-2) check /usr/syno/synoman/webman/3rdparty/EASYRSA
+1. upload and install EasyRSA.spk in package manager 
+2. check /usr/syno/synoman/webman/3rdparty/EASYRSA 
 
 
 
 Packaging
 ============
 
-1) tgz src/EasyRSA/package/* => package.tgz
-2) tar src/EasyRSA/INFO,package.tgz,scripts  => EasyRSA.spk
+1. tgz src/EasyRSA/package/* => package.tgz 
+2. tar src/EasyRSA/INFO,package.tgz,scripts  => EasyRSA.spk
 
 
 TODO
